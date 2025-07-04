@@ -346,28 +346,6 @@ curl -X GET http://localhost:8000/api/expenses/type/credit/ \
   -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
 ```
 
-## Financial Summary
-
-Get your financial overview:
-
-```bash
-curl -X GET http://localhost:8000/api/expenses/summary/ \
-  -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
-```
-
-Response:
-
-```json
-{
-  "total_income": 575.0,
-  "total_expenses": 30.5,
-  "net_balance": 544.5,
-  "total_records": 2,
-  "message": "success",
-  "status": 200
-}
-```
-
 ## Error Handling Examples
 
 ### 403 Forbidden - Permission Denied
